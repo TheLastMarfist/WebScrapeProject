@@ -13,8 +13,8 @@ def main():
 	numofminutes = int(input("After how many minutes do you check the website?"))
 	account_sid = input("What is your Twilio account sid?")
 	auth_token  = input("What is you Twilio authentication token?")
-	twiliophonenumber = int(input("What is your Twilio phone number?"))
-	userphonenumber = int(input("What is you phone number?"))
+	twiliophonenumber = int(input("What is your Twilio phone number? Don't forget the country code e.g. +1 for the US."))
+	userphonenumber = int(input("What is you phone number? Don't forget the country code e.g. +1 for the US."))
 	# setting up messaging
 	client = Client(account_sid, auth_token)
 	# scraping the website as it is when you run the script
